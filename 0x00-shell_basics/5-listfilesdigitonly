@@ -1,2 +1,2 @@
 #!/bin/bash
-eval ls -l -n
+eval ls -al -n
