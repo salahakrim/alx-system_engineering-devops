@@ -1,15 +1,3 @@
 #!/bin/bash
+find . -maxdepth 1 -name "*.html" -newer ../ -exec cp {} ../ \;
 
-# Get the current working directory and its parent directory
-current_dir=$(pwd)
-parent_dir=$(dirname "$current_dir")
-
-# Iterate over HTML files in the current working directory
-for file in *.html; do
-    # Check if the file does not exist in the parent directory or is newer
-    if [ ! -e "$parent_dir/$file" ] || [ "$current_dir/$file" -nt "$parent_dir/$file" ]; then
-        # Copy the file to the parent directory
-        cp "$current_dir/$file" "$parent_dir/$file"
-        echo "Copied: $file"
-    fi
-done
