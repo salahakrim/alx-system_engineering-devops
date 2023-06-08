@@ -1,2 +1,2 @@
 #!/bin/bash
-eval ls -la  eval ls -la ..  eval ls -ls /boot/
+eval ls -la cd .. ls -la ls -ls /boot/
