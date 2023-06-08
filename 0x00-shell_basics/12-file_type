@@ -1,2 +1,2 @@
 #!/bin/bash
-echo(/tmp/iamafili:) file -b /tmp/iamafile
+dirname file -b /tmp/iamafile
