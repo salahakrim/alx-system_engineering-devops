@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -la eval ls -la .. eval ls -ls /boot/
+ls -la . .. /root
