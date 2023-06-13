@@ -1,2 +1,2 @@
 #!/bin/bash
-path_count() { IFS=: read -ra path_directories <<< "$PATH" echo "${#path_directories[@]}" }
+echo "$PATH" | tr ':' '\n'
